@@ -1,0 +1,203 @@
+:root{
+    --bg-color: #222831;
+    --font-color:#ECECEC;
+    --title-color:#30475E;
+    --highlight-color: #C1A57B;
+    font-size: 16px;
+}
+/* ----------- Adjust CSS to smaller devices -------------------*/
+@media only screen and (min-width: 380px) and (max-width: 600px) {
+    nav{
+        font-size: 0.9em;
+    }
+    header{
+        width: 100%;
+        height: auto;
+        font-size: 0.9em;
+    }
+    .body-content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        font-size: 0.9em;
+    }
+
+    footer{
+        width: 100%;
+        height: auto;
+        font-size: 0.9em;
+    }
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0px -15px 0px -15px;
+    
+}
+/* ---------------- BAV BAR ----------------------------*/
+.nav-ul{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    list-style-type: none ;
+    margin: auto;                     
+    text-align: center;
+    background-color: var(--title-color);
+
+}
+.nav-ul-li{   
+    border-width: 0px 0px 0px 1px;
+    border-style: inset;
+    border-color: var(--font-color);
+    padding: 10px 20px 10px 20px;
+   
+}
+
+.nav-ul-li:nth-child(1){
+    border-left: 0px;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: rgb(155, 153, 153);
+    font-weight: bold;
+    
+}
+
+.nav-a:hover{
+    color: blue;
+    font-weight: bolder;
+}
+/*------------ BODY CONTENT ---------------------*/
+/*------------ HEADER ---------------------*/
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    /* color: var(--font-color); */
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 0.5;
+    flex: 0 0 100%; 
+
+}
+
+#title-h1 {
+    font-size: 3em;
+    text-shadow: -5px 5px var(--title-color);
+}
+
+#title-p {
+    border-bottom: 1px dotted var(--title-color);
+    padding-bottom: 1.3em;
+}
+
+.emphasis {
+    filter: brightness(200%); 
+    text-shadow: 0 0 0.05em rgb(134, 223, 235), 0 0 0.2em #22b7ca, 0 0 0.3em #f2f39c;
+}
+
+/*------------ CONTENT ---------------------*/
+.body-content{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    width: 90%;
+}
+/*------------ IMAGE ---------------------*/
+#img-div {
+    flex: 0 0 40%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+    box-shadow: 10px 10px 10px black;
+    margin: 1.5em 1.5em 1.5em 1.5em;
+    
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    filter:grayscale(100%);
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+#img-caption{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3em;
+    background-image: linear-gradient(
+      -225deg,
+      #191970 0%,
+      #00f000 29%,
+      #bd0000 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+/*------------ TRIBUTE INFO ---------------------*/
+#tribute-info{
+    flex: 0 0 60%; 
+    align-content: space-around;
+    text-align: justify;
+    
+}
+
+blockquote{
+    border-left: 7px double #ccc;
+    margin: 1.5rem 10px;
+    padding: 1rem 20px;
+}
+/*------------ FOOTER ---------------------*/
+footer{
+    text-align: center;
+    background-color: var(--title-color) ;
+}
+    
+a {
+    color: var(--highlight-color) ;
+}
+
+a:hover {
+    color: blue;
+}
+
+.themeBtn {
+    /* background-color: #04AA6D; */
+    border: solid 1px white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
